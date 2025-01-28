@@ -2,9 +2,9 @@
 // DESAFIO SUPER TRUNFO
 int main (){
 
-char Estado [20];
-char Código [20];
-char Cidade [20];
+char Estado [20] = "indefinido";
+char Código [20] = "indefinido";
+char Cidade [20] = "indefinido";
 float população;
 float Área;
 float Pib;
@@ -19,6 +19,6 @@ printf("C) - O sistema ainda não reconhece palavras compostas Ex. São Paulo, S
 
 
 printf("DIGITE O NOME DO ESTADO:\n");
-scanf("%s", &Estado);
+
 
 }
