@@ -1,22 +1,59 @@
 #include <stdio.h>
+// DESAFIO SUPER TRUNFO
+int main (){
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+char Estado [20] = "indefinido";
+char Código [20] = "indefinido";
+char Cidade [20] = "indefinido";
+float população;
+float Área;
+float Pib;
+int PontosTuristicos;
+char sim  = 's';
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+printf(" *****     INTRODUÇÃO     *****\n");
+printf("A) - A partir de agora você irá criar a sua carta super trunfo com base em informações de cidades;\n");
+printf("B) - Siga as instruções e responda as perguntas obedecendo os comandos;\n");
+printf("C) - O sistema ainda não reconhece palavras compostas Ex. São Paulo, São Felix, etc., Sendo assim inclua apenas palavras simples.\n");
+
+printf("PRONTO PRA COMEÇAR? DIGITE s = (sim)\n");
+scanf("%c", &sim);
+
+printf("DIGITE O NOME DO ESTADO:\n");
+scanf("%s", &Estado);
+
+printf("DIGITE O CÓDIGO DO ESTADO EX.: (AS 02 PRIMEIRAS LETRAS + O NUMERAL SP01, SP02...):\n");
+scanf("%s", &Código);
+
+printf("DIGITE O NOME DA CIDADE:\n");
+scanf("%s", &Cidade);
+
+printf("DIGITE A POPULAÇÃO SEM PONTO/VÍRGULAS (./,) EX.: (2035640001, 10360335...):\n");
+scanf("%f", &população);
+
+printf("DIGITE O TAMANHO DA ÁREA EM KM² EX.: (42.000, 420.000 OBS.: NÃO COLOCAR VÍRGULA (,)):\n");
+scanf("%f", &Área);
+
+printf("DIGITE O VALOR DO PIB EX.: (54.970):\n");
+scanf("%f", &Pib);
+
+printf("DIGITE A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
+scanf("%d", &PontosTuristicos);
+
+
+printf(" *****  DADOS DA CARTA  *****\n");
+printf(" ----------------------------\n");
+
+
+
+printf("ESTADO: %s\n", Estado);
+printf("CÓDIGO DA CIDADE: %s\n", Código);
+printf("CIDADE: %s\n", Cidade);
+printf("POPULAÇÃO: %f\n", população);
+printf("ÁREA EM KM²: %f\n", Área);
+printf("PIB: %f\n", Pib);
+printf("Nº PONTO TURÍSTICOS: %d\n", PontosTuristicos);
+
+
 }
