@@ -63,7 +63,7 @@ int main() {
     printf("ÁREA EM KM²: %f\n", area);
     printf("PIB: %f\n", pib);
     printf("Nº DE PONTOS TURÍSTICOS: %d", PontosTuristicos);
-
+// DESAFIO FINALIZADO
 
 return 0;
 
