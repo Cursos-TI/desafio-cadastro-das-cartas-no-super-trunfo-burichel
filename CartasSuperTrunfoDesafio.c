@@ -4,14 +4,18 @@
 int main (){
 
 // CADASTRO DAS VARÍAVEIS.
-char Estado [20] = "indefinido"; 
-char Código [20] = "indefinido";
-char Cidade [20] = "indefinido";
-float população;
-float Área;
-float Pib;
-int PontosTuristicos;
-char sim  = 's';
+char Estado [99] = "indefinido";
+char Estado2 [99] = "indefinido";
+char Código [99] = "indefinido";
+char Código2 [99] = "indefinido";
+char Cidade  [99] = "indefinido";
+char Cidade2 [99] = "indefinido";
+float população, população2;
+float Área, Área2;
+float Pib, Pib2;
+int PontosTuristicos, PontosTuristicos2;
+float densidade_populacional, densidade_populacional2;
+float pib_per_capta, pib_per_capta2;
 
 // APRESENTAÇÃO INTRUDUTIVA COM INSTRUÇÕES DE USO.
 printf(" *****     INTRODUÇÃO     *****\n");
@@ -51,11 +55,35 @@ scanf("%f", &Pib);
 printf("DIGITE A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
 scanf("%d", &PontosTuristicos);
 
+printf("DIGITE O NOME DO ESTADO 2:\n");
+scanf("%s", &Estado2);
+
+printf("DIGITE O CÓDIGO DO ESTADO 2 EX.: (AS 02 PRIMEIRAS LETRAS + O NUMERAL SP01, SP02...):\n");
+scanf("%s", &Código2);
+
+printf("DIGITE O NOME DA CIDADE :\n");
+scanf("%s", &Cidade2);
+
+printf("DIGITE A POPULAÇÃO EX.: (20.553, 100.335 ...):\n");
+scanf("%f", &população2);
+
+printf("DIGITE O TAMANHO DA ÁREA EM KM² EX.: (42.000, 420.000 OBS.: NÃO COLOCAR VÍRGULA (,)):\n");
+scanf("%f", &Área2);
+
+printf("DIGITE O VALOR DO PIB EX.: (54.970):\n");
+scanf("%f", &Pib2);
+
+printf("DIGITE A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
+scanf("%d", &PontosTuristicos2);
+
+densidade_populacional = população / Área;
+densidade_populacional2 = população2 / Área2;
+pib_per_capta = Pib / população;
+pib_per_capta2 = Pib2 / população2;
+
 //IMPRIME O CABEÇALHO - DADOS DA CARTA -.
 printf(" *****  DADOS DA CARTA  *****\n");
 printf(" ----------------------------\n");
-
-
 
 // APRESENTA OS DADOS DA CARTA CADASTRADA.
 printf("ESTADO: %s\n", Estado);
@@ -65,7 +93,30 @@ printf("POPULAÇÃO: %f\n", população);
 printf("ÁREA EM KM²: %f\n", Área);
 printf("PIB: %f\n", Pib);
 printf("Nº PONTO TURÍSTICOS: %d\n", PontosTuristicos);
+printf("DENSIDADE POPULACIONAL: %f\n", densidade_populacional);
+printf("PIB PER CAPTA: %f\n", pib_per_capta);
 
-return 0;
+printf(" *****  DADOS DA CARTA 2 *****\n");
+
+printf("ESTADO: %s\n", Estado2);
+printf("CÓDIGO DA CIDADE: %s\n", Código2);
+printf("CIDADE: %s\n", Cidade2);
+printf("POPULAÇÃO: %f\n", população2);
+printf("ÁREA EM KM²: %f\n", Área2);
+printf("PIB: %f\n", Pib2);
+printf("Nº PONTO TURÍSTICOS: %d\n", PontosTuristicos2);
+printf("DENSIDADE POPULACIONAL: %f\n", densidade_populacional2);
+printf("PIB PER CAPTA: %f\n", pib_per_capta2);
+
+printf("COMPARAÇÃO DAS CARTAS (ATRIBUTO - POPULAÇÃO):\n");
+
+
+if (população > população2) {
+    printf("VENCEDOR:%s / %s / %s: \n", Estado, Código, Cidade);
+}   else {   
+    printf("VENCEDOR: %s / %s / %s: \n", Estado2, Código2, Cidade2);
+}
+
+
 
 }
