@@ -6,12 +6,12 @@ int main (){
 // CADASTRO DAS VARÍAVEIS.
     char Estado [99] = "indefinido";
     char Estado2 [99] = "indefinido";
-    char Código [99] = "indefinido";
-    char Código2 [99] = "indefinido";
+    char Codigo [99] = "indefinido";
+    char Codigo2 [99] = "indefinido";
     char Cidade  [99] = "indefinido";
     char Cidade2 [99] = "indefinido";
-    float população, população2;
-    float Área, Área2;
+    float populacao, populacao2;
+    float Area, Area2;
     float Pib, Pib2;
     int PontosTuristicos, PontosTuristicos2;
     float densidade_populacional, densidade_populacional2;
@@ -34,7 +34,7 @@ int main (){
 
 // ATRIBUIÇAO DO CÓDIGO.
     printf("DIGITE O CÓDIGO DO ESTADO EX.: (AS 02 PRIMEIRAS LETRAS + O NUMERAL SP01, SP02...):\n");
-    scanf("%s", &Código);
+    scanf("%s", &Codigo);
 
 // ATRIBUIÇAO DO NOME DA CIDADE.
     printf("DIGITE O NOME DA CIDADE:\n");
@@ -42,11 +42,11 @@ int main (){
 
 // ATRIBUIÇAO DA POPULAÇÃO.
     printf("DIGITE A POPULAÇÃO SEM PONTO/VÍRGULAS (./,) EX.: (2035640001, 10360335...):\n");
-    scanf("%f", &população);
+    scanf("%f", &populacao);
 
 // ATRIBUIÇAO TO TAMANHO DA ÁREA TERRITORIAL. 
     printf("DIGITE O TAMANHO DA ÁREA EM KM² EX.: (42.000, 420.000 OBS.: NÃO COLOCAR VÍRGULA (,)):\n");
-    scanf("%f", &Área);
+    scanf("%f", &Area);
 
 // ATRIBUIÇAO DO VALOR DO PIB.
     printf("DIGITE O VALOR DO PIB EX.: (54.970):\n");
@@ -60,16 +60,16 @@ int main (){
     scanf("%s", &Estado2);
 
     printf("DIGITE O CÓDIGO DO ESTADO 2 EX.: (AS 02 PRIMEIRAS LETRAS + O NUMERAL SP01, SP02...):\n");
-    scanf("%s", &Código2);
+    scanf("%s", &Codigo2);
 
     printf("DIGITE O NOME DA CIDADE :\n");
     scanf("%s", &Cidade2);
 
     printf("DIGITE A POPULAÇÃO EX.: (20.553, 100.335 ...):\n");
-    scanf("%f", &população2);
+    scanf("%f", &populacao2);
 
     printf("DIGITE O TAMANHO DA ÁREA EM KM² EX.: (42.000, 420.000 OBS.: NÃO COLOCAR VÍRGULA (,)):\n");
-    scanf("%f", &Área2);
+    scanf("%f", &Area2);
 
     printf("DIGITE O VALOR DO PIB EX.: (54.970):\n");
     scanf("%f", &Pib2);
@@ -77,10 +77,10 @@ int main (){
     printf("DIGITE A QUANTIDADE DE PONTOS TURÍSTICOS:\n");
     scanf("%d", &PontosTuristicos2);
 
-    densidade_populacional = população / Área;
-    densidade_populacional2 = população2 / Área2;
-    pib_per_capta = Pib / população;
-    pib_per_capta2 = Pib2 / população2;
+    densidade_populacional = populacao / Area;
+    densidade_populacional2 = populacao2 / Area2;
+    pib_per_capta = Pib / populacao;
+    pib_per_capta2 = Pib2 / populacao2;
 
 //IMPRIME O CABEÇALHO - DADOS DA CARTA -.
     printf(" *****  DADOS DA CARTA  *****\n");
@@ -88,10 +88,10 @@ int main (){
 
 // APRESENTA OS DADOS DA CARTA CADASTRADA.
     printf("ESTADO: %s\n", Estado);
-    printf("CÓDIGO DA CIDADE: %s\n", Código);
+    printf("CÓDIGO DA CIDADE: %s\n", Codigo);
     printf("CIDADE: %s\n", Cidade);
-    printf("POPULAÇÃO: %f\n", população);
-    printf("ÁREA EM KM²: %f\n", Área);
+    printf("POPULAÇÃO: %f\n", populacao);
+    printf("ÁREA EM KM²: %f\n", Area);
     printf("PIB: %f\n", Pib);
     printf("Nº PONTO TURÍSTICOS: %d\n", PontosTuristicos);
     printf("DENSIDADE POPULACIONAL: %f\n", densidade_populacional);
@@ -100,10 +100,10 @@ int main (){
     printf(" *****  DADOS DA CARTA 2 *****\n");
 
     printf("ESTADO: %s\n", Estado2);
-    printf("CÓDIGO DA CIDADE: %s\n", Código2);
+    printf("CÓDIGO DA CIDADE: %s\n", Codigo2);
     printf("CIDADE: %s\n", Cidade2);
-    printf("POPULAÇÃO: %f\n", população2);
-    printf("ÁREA EM KM²: %f\n", Área2);
+    printf("POPULAÇÃO: %f\n", populacao2);
+    printf("ÁREA EM KM²: %f\n", Area2);
     printf("PIB: %f\n", Pib2);
     printf("Nº PONTO TURÍSTICOS: %d\n", PontosTuristicos2);
     printf("DENSIDADE POPULACIONAL: %f\n", densidade_populacional2);
@@ -112,10 +112,10 @@ int main (){
     printf("COMPARAÇÃO DAS CARTAS (ATRIBUTO - POPULAÇÃO):\n");
 
 
-    if (população > população2) {
-    printf("VENCEDOR:%s / %s / %s: \n", Estado, Código, Cidade);
+    if (populacao > populacao2) {
+    printf("VENCEDOR:%s / %s / %s: \n", Estado, Codigo, Cidade);
 }       else {   
-    printf("VENCEDOR: %s / %s / %s: \n", Estado2, Código2, Cidade2);
+    printf("VENCEDOR: %s / %s / %s: \n", Estado2, Codigo2, Cidade2);
 }
 
 return 0;
