@@ -16,6 +16,7 @@ float Pib, Pib2;
 int PontosTuristicos, PontosTuristicos2;
 float densidade_populacional, densidade_populacional2;
 float pib_per_capta, pib_per_capta2;
+char sim = 's';
 
 // APRESENTAÇÃO INTRUDUTIVA COM INSTRUÇÕES DE USO.
 printf(" *****     INTRODUÇÃO     *****\n");
@@ -117,6 +118,6 @@ if (população > população2) {
     printf("VENCEDOR: %s / %s / %s: \n", Estado2, Código2, Cidade2);
 }
 
-
+return 0;
 
 }
