@@ -41,7 +41,7 @@ printf("DIGITE O NOME DA CIDADE:\n");
 scanf("%s", &Cidade);
 
 // ATRIBUIÇAO DA POPULAÇÃO.
-printf("DIGITE A POPULAÇÃO SEM PONTO/VÍRGULAS (./,) EX.: (2035640001, 10360335...):\n");
+printf("DIGITE A POPULAÇÃO EX.: (20.553, 100.335...):\n");
 scanf("%f", &população);
 
 // ATRIBUIÇAO TO TAMANHO DA ÁREA TERRITORIAL. 
