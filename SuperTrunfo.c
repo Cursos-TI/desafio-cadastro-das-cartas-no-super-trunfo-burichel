@@ -1,7 +1,7 @@
 #include <stdio.h>
 // DESAFIO SUPER TRUNFO.
 
-    int main (){
+int main (){
 
 // CADASTRO DAS VARÍAVEIS.
     char Estado [99] = "indefinido";
